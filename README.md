@@ -37,6 +37,42 @@ A new model claims comparable quality at 40% lower cost. If model cost is a live
 
 If a popular tool looks useful but solves no current problem and has no defined revisit trigger, it returns `IGNORE` rather than growing a backlog.
 
+## Quick start
+
+1. Copy `SKILL.md` into your agent's skill/instructions layer.
+2. Give the agent one external signal plus your current goal, bottleneck, existing capabilities, and constraints.
+3. Require the structured output contract.
+4. Treat `TEST_NOW` as a bounded experiment, `COMMERCIAL_VALIDATE` as buyer/need discovery, and `IGNORE` as a real decision — not a backlog item.
+
+Minimal prompt:
+
+```text
+Use Mission Zero Radar on this signal.
+Current goal: ...
+Current bottleneck: ...
+Existing capability: ...
+Constraints: ...
+Signal: ...
+```
+
+## Release evidence
+
+The v0.1 decision rules were developed against a 457-signal historical operating corpus, then evaluated on frozen sets. The public repository does not include private historical data.
+
+- frozen calibration: **25/30 = 83.3%** exact verdict agreement
+- fresh frozen holdout: **17/20 = 85%** on first run
+- full-contract release check: **19/20 = 95%** exact verdict agreement
+- false `BUILD_NOW`: **0%**
+- false actionable rate: **12.5%** (release limit: 15%)
+- `TEST_NOW` with metric + stop condition: **100%**
+- `COMMERCIAL_VALIDATE` requiring buyer/need evidence: **100%**
+
+See `BENCHMARKS.md` for methodology and limitations.
+
+## Limitations
+
+Mission Zero Radar is a decision layer, not an oracle. It depends on accurate current context. It can misclassify borderline cases such as `PARK` vs `IGNORE` or `TEST_NOW` vs `COMMERCIAL_VALIDATE`. It should not be used as sole authorization for financial, destructive, deployment, credential, or external-communication actions.
+
 ## Files
 
 - `SKILL.md` — portable agent skill
