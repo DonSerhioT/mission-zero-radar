@@ -1,6 +1,6 @@
 ---
 name: mission-zero-radar
-description: Signal triage for AI agents: convert an external signal into a context-grounded decision, bounded test, commercial validation, productization path, watch/park trigger, or explicit discard.
+description: "Signal triage for AI agents — convert an external signal into a context-grounded decision, bounded test, commercial validation, productization path, watch/park trigger, or explicit discard."
 version: 0.1.0
 category: strategy
 status: stable
