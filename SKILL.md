@@ -1,6 +1,6 @@
 ---
 name: mission-zero-radar
-description: Convert an external signal into a context-grounded decision, bounded test, commercial validation, productization path, watch/park trigger, or explicit discard.
+description: Signal triage for AI agents: convert an external signal into a context-grounded decision, bounded test, commercial validation, productization path, watch/park trigger, or explicit discard.
 version: 0.1.0
 category: strategy
 status: stable
@@ -26,7 +26,8 @@ If context is missing, do not invent strategic relevance.
 - `BUILD_NOW` — exceptional: verified blocker + verified missing capability + proven implementation path.
 - `TEST_NOW` — relevant uncertainty can be resolved by a cheap reversible test.
 - `COMMERCIAL_VALIDATE` — plausible external value/revenue; real buyer/need evidence required before build.
-- `PRODUCTIZE` — internally proven capability with a credible reusable external surface.- `WATCH` — no action now; a specific external event/date/threshold can change the decision.
+- `PRODUCTIZE` — internally proven capability with a credible reusable external surface.
+- `WATCH` — no action now; a specific external event/date/threshold can change the decision.
 - `PARK` — value path exists, but a named internal dependency is not ready and a cheap test cannot resolve it now.
 - `IGNORE` — no current value path, no justified test, no precise trigger, or duplicated capability.
 

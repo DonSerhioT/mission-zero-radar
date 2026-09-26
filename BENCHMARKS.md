@@ -20,3 +20,10 @@ Evaluation date: 2026-09-07.
 - `COMMERCIAL_VALIDATE` requiring buyer/need evidence: **100%**.
 
 The first-run 85% holdout score is the primary generalization result; the later 95% full-contract run is reported separately rather than substituted for it.
+
+## Limitations (read before citing these numbers)
+- Verdicts were produced by a single LLM configuration. The model id was not recorded in the evaluation artifacts.
+- Ground-truth labels were assigned by the skill's author, not by independent annotators.
+- n = 30 (calibration) and n = 20 (holdout); one run per case; no variance estimate is available.
+- Cases come from the author's own operating corpus (457 signals / 45 recurring runs), not from a third-party benchmark.
+- Everything published is reproducible only against the author's private corpus; the public repo ships a 6-case synthetic contrast set.

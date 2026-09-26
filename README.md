@@ -2,6 +2,8 @@
 
 **Turn external signals into decisions, bounded tests, and explicit discard — not another AI-news digest.**
 
+*Category: signal triage — strategic signal evaluation against your current project context. It is not a monitor and not a runtime action firewall: it decides whether a signal deserves action, it does not gate an agent's execution.*
+
 Mission Zero Radar is a small, portable strategic-relevance skill for AI agents. It is designed for founders, operators, product teams, and autonomous-agent systems that already have enough information and need better judgment about what deserves action.
 
 ## The problem
@@ -39,7 +41,12 @@ If a popular tool looks useful but solves no current problem and has no defined 
 
 ## Quick start
 
-1. Copy `SKILL.md` into your agent's skill/instructions layer.
+1. Install (or copy `SKILL.md` into your agent's skill layer):
+
+   ```bash
+   npx skills add DonSerhioT/mission-zero-radar
+   ```
+
 2. Give the agent one external signal plus your current goal, bottleneck, existing capabilities, and constraints.
 3. Require the structured output contract.
 4. Treat `TEST_NOW` as a bounded experiment, `COMMERCIAL_VALIDATE` as buyer/need discovery, and `IGNORE` as a real decision — not a backlog item.
