@@ -44,7 +44,7 @@ If a popular tool looks useful but solves no current problem and has no defined 
 1. Install (or copy `SKILL.md` into your agent's skill layer):
 
    ```bash
-   npx skills add DonSerhioT/mission-zero-radar
+   npx skills add serhiitrofimov/mission-zero-radar
    ```
 
 2. Give the agent one external signal plus your current goal, bottleneck, existing capabilities, and constraints.
